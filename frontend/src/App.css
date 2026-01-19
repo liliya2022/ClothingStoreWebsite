@@ -1,0 +1,39 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+.app-header {
+  padding: 24px 40px;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.page-title {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: #1a1a1a;
+  text-transform: uppercase;
+}
+
+.app-main {
+  flex: 1;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    padding: 20px 24px;
+  }
+
+  .page-title {
+    font-size: 16px;
+  }
+}
